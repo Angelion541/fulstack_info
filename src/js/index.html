@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.scss">
+    <script src="../scripts/page__js/app.js" defer></script>
+    <title>Test</title>
+  </head>
+  <body class="page__body body">
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="../index.html">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="../html/index.html">
+            HTML
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            CSS
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1 class="page__title">
+      JavaScript course
+    </h1>
+
+    <main class="body__main main">
+      <section>
+        <article class="main__rules rules">
+          <h2 class="main__title rules__title">
+            Concepts and rules
+          </h2>
+
+          <div class="main__content rules__content">
+            <ul>
+              <li>
+                <h3>объявление переменных</h3>
+                <p>
+                  var    - использовался раньше. Есть неявные проблемы с перезаписыванием. <br>
+                  let    - объявление переменных которые в процесе работы скрипта будет менятся<br>
+                  const  - объявление константы т.е. переменной которая после присвоения ей значения не позволяет изменять её значение
+                </p>
+              </li>
+
+              <li>
+                <h3>types of data</h3>
+                <p>
+                  number and Infinity - где безконеность не равна сама себе.
+                </p>
+              </li>
+
+              <li>
+                <h3>rules</h3>
+                <p>
+                  в зависимости от типа формально записываемые значения в переменные называются числовым и строковым литералом
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  в зависимости от типа формально записываемые значения в переменные называются числовым и строковым литералом
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  оператор if в условии проверяет выражение по принципу true/false
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  null имеет тип данных object.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  склеивание троки с строкой(числом) называется конкатенация
+                </p>
+              </li>
+
+              <li>
+                <h4>объявлять функции можно 3мя способами:</h4>
+                <p>
+                  - function name(...vars) {}            - function declaration<br>
+                  - const name = function(...vars) {};   - function expression <br>
+                  - const name = (...vars) => {};        - function expression <br>
+                  expression можно использовать только после объявления в отличии от declaration
+                </p>
+              </li>
+
+              <li>
+                <h4>функция выбора</h4>
+                <p>
+                  if () { <br>
+                  } else if () { <br>
+                  } else {} <br>
+                  условный оператор выбора: условие ? true : false; другое название тернарный оператор.
+                </p>
+              </li>
+
+              <li>
+                <h4>Циклы бывают:</h4>
+                <p>
+                  - for (let i; i < n; i++) {}        - можно упустить условия но не забудь поставить ';'. <br>
+                  - for (const el of/is array/obj) {} - цикл без использования индекса. <br>
+                  - while () {} or do {} while ()     - цикл неопределенного кол. итераций с пред/после условием <br>
+                   переменные объявленные в цикле вне цикла не существуют
+                </p>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="main__commands commands">
+          <h2>
+            Commands
+          </h2>
+          <div class="content">
+            <ul>
+              <li>
+                <p>
+                  debugger; - запускает скрипт пошагово.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  'use strict'; - директива включает извещение об ошибках.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  document.write('text'); - input text to screen. Используется редко потому что контент попадает на страницу иным образом.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  console.log('text');    - input text to console. <br>
+                  При перечислении переменных после запятой в кобках команда отображает их значения с пробелом от предыдущего
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  typeof(var); or typeof var; - возвращает строку с названием типа переменной. Работает с выражениями.
+                </p>
+              </li>
+            </ul>
+
+
+          </div>
+        </article>
+
+        <article class="main__other other">
+          <ul>
+            <h3>
+              numeral literals
+            </h3>
+            <p>
+              4.2e3 or 4.2e-3 or .42e4 or 0.42e4 = 4200
+            </p>
+            <li>
+              <p>
+                decimal.toString(n) - переводит десятичное число в число системы исчисления основа которой указана в n.
+              </p>
+            </li>
+            <li>
+              <h3>Бинарная</h3>
+
+              <p>
+                0b101010 = 42
+              </p>
+            </li>
+            <li>
+              <h3>Восьмиричная</h3>
+
+              <p>
+                0o52 = 42
+              </p>
+            </li>
+            <li>
+              <h3>Десятичная</h3>
+
+              <p>
+                42
+              </p>
+            </li>
+            <li>
+              <h3>Хекс или шеснадцатиричная</h3>
+              <p>
+                0x2a or 0x2A = 42
+              </p>
+            </li>
+          </ul>
+
+          <h2>
+            type data function
+          </h2>
+
+          <div class="string">
+            <h3>
+              string
+            </h3>
+
+            <div class="content">
+              <ul>
+                <li>
+                  <p>
+                    text.charAt(index);               - возвращает символ строки по его индексу. Если за длинной строки возвращает "".
+                    text[index]                       - возвращает символ строки по его индексу. Если за длинной строки возвращает undefined.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    text.substr(startIndex, length); - возвращает подстроку длинной length. <br>
+                    text.substring(startIndex, endIndex); - возвращает подстроку в рамках строго меньше endIndex. <br>
+                    text.slice(startIndex, endIndex); - возвращает подстроку в рамках строго меньше endIndex. <br>
+                      Может работать без параметров и возвращать всю строку. slice позволяет работать с отрицательными аргументами.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    text.length - возвращает длинну строки.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    text.toLowerCase();       - преобразует текст в нижний регистр <br>
+                    text.toUpperCase();       - преобразует текст в верхний регистр<br>
+                    text.toLowerCase() !== text.toUpperCase() - проверка что символ не буква
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    В строке переприсваивать значения символов запрещено. Делается через специальные функции или при проборе в цикле.
+                  </p>
+                </li>
+
+                <li>
+                  <ul>
+                    <li>
+                      <p>
+                        text.include(part, index) - возвращает булево true если последовательность символов есть в любой части строки. <br>
+                        Начинается проверка с индекса. Параметр индекс не обязателен.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        text.indexOf(part, index) - возвращает индекс первого найденого совпадения подстроки. Начиная с индекса. <br>
+                        text.lastIndexOf(part, index) - возвращает индекс последнего найденого совпадения подстроки. Начиная с индекса. <br>
+                        Если нет совпадения возвращает -1.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        text.startWith(part) - возвращает true если строка начинается с подстроки. <br>
+                        text.endsWith(part) - возвращает true если строка заканчивается подстрокой.
+                      </p>
+                    </li>
+
+                    <li>
+                      <p>
+                        text.trim() - убирает вначале и вконце строки пробелы
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <h4>приведение к строке</h4>
+                  <p>
+                    String(x) <br>
+                    x.toString() работает не со всеми значениями. например не работает с undefined. <br>
+                    '' + x <br>
+                    `${x}`
+                  </p>
+                </li>
+
+                <li>
+                  <h4>приведение строки к числу</h4>
+                  <p>
+                    Number(str) <br>
+                    +str - используется чаще из-за краткости
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="array">
+            <h3>
+              string
+            </h3>
+
+            <div class="content">
+              <p>
+
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
