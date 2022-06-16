@@ -1,1 +1,1 @@
-- [DEMO LINK](https://angelion541.github.io/fulstack_info/)
+- [DEMO LINK](https://angelion541.github.io/fulstack_info/src/)
